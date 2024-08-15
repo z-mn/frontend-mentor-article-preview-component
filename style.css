@@ -29,3 +29,7 @@ img {
 
 /* Main structural styles */
 
+body {
+    font-family: var(ff);
+    color: var(--clr-grayish-blue-dark);
+}
