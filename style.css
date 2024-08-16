@@ -169,3 +169,23 @@ p {
 .profile__element--hidden {
     display: none;
 }
+
+/* Desktop styling */
+
+@media (min-width: 50em) {
+    .card {
+        flex-direction: row;
+        max-width: 42rem;
+    }
+    .card__furniture-image {
+        border-radius: var(--font-size-paragraph) 0 0 var(--font-size-paragraph);
+        max-width: 17.5rem;
+        max-height: 20rem;
+    }
+    .card__text-container {
+        padding: 3em 3em 2.5em 3em;
+    }
+    .card__about-section {
+        margin-block-start: 1.5rem;
+    }
+}
