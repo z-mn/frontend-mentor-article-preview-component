@@ -20,7 +20,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile Screenshot](./screenshot.jpg)
+![Mobile Screenshot](/mobile_design.png)
+![Mobile Active State Screenshot](/mobile-active_design.png)
 ![Desktop Screenshot](./screenshot.jpg)
 
 ### Links
