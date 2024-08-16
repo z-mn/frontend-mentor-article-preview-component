@@ -7,7 +7,7 @@
     --clr-blue-light: hsl(214, 17%, 51%);
     --clr-grayish-blue: hsl(212, 23%, 69%);
     --clr-grayish-blue-light: hsl(210, 46%, 95%);
-    --ff: 'Manrope', sans-serif;
+    --ff: 'Manrope';
     --fw-primary: 500;
     --fw-header: 700;
     --font-size-paragraph: 0.8125rem;
@@ -30,6 +30,93 @@ img {
 /* Main structural styles */
 
 body {
-    font-family: var(ff);
+    font-family: var(--ff);
+    font-weight: var(--fw-primary);
+    font-size: var(--font-size-paragraph);
+    color: var(--clr-blue-light);
+    min-height: 100vh;
+    background-color: var(--clr-grayish-blue-light);
+    line-height: 1.5;
+}
+
+body, main {
+    display: grid;
+    place-content: center;
+}
+
+/* Card styles */
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--font-size-paragraph);
+    max-width: 22rem;
+}
+
+.card__furniture-image {
+    border-radius: var(--font-size-paragraph) var(--font-size-paragraph) 0 0;
+    object-fit: cover;
+    max-height: 14rem;
+}
+
+.card__text-container {
+    padding: 3em 2.5em 1.5em 2.5em;
+}
+
+h1 {
+    font-size: 1.1rem;
     color: var(--clr-grayish-blue-dark);
+    margin-block-end: var(--font-size-paragraph);
+    font-weight: var(--fw-header);
+}
+
+p {
+    font-size: var(--font-size-paragraph);
+    line-height: 1.7;
+}
+
+/* "About" section styles */
+
+.card__about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 2rem;
+}
+
+.about-section__profile {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile__image {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--clr-grayish-blue-dark);
+    font-weight: var(--fw-header);
+}
+
+.date {
+    color: var(--clr-grayish-blue);
+}
+
+.about-section__swap-button {
+    display: inline-block;
+    background-color: var(--clr-grayish-blue-light);
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    transition: 200ms background-color ease-out;
+}
+
+.about-section__swap-button:hover {
+    background-color: var(--clr-blue-light);
+    transition: 200ms background-color ease-in;
 }
