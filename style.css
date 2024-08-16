@@ -120,3 +120,25 @@ p {
     background-color: var(--clr-blue-light);
     transition: 200ms background-color ease-in;
 }
+
+/* Secondary 'about' section styles */
+
+.about-section__profile > svg {
+    display: none;
+}
+
+.about-section__profile > p {
+    display: none;
+}
+
+.about-section__swap-button--secondary {
+    background-color: var(--clr-blue-light);
+}
+
+.image--secondary {
+    fill: #FFFFFF;
+}
+
+.about-section__profile--secondary {
+    background-color: var(--clr-grayish-blue-dark);
+}
