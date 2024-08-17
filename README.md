@@ -22,7 +22,8 @@ Users should be able to:
 
 ![Mobile Screenshot](/mobile_design.png)
 ![Mobile Active State Screenshot](/mobile-active_design.png)
-![Desktop Screenshot](./screenshot.jpg)
+![Desktop Screenshot](/desktop_design.png)
+![Desktop Active State Screenshot](/desktop-active_design.png)
 
 ### Links
 
