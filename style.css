@@ -208,7 +208,7 @@ p {
 @media (min-width: 50em) {
     .card {
         flex-direction: row;
-        max-width: 44rem;
+        max-width: 46rem;
     }
     .card__furniture-image {
         border-radius: var(--font-size-paragraph) 0 0 var(--font-size-paragraph);
